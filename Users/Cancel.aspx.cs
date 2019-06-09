@@ -79,12 +79,7 @@ public partial class Users_Cancel : System.Web.UI.Page, IHttpHandler, IRequiresS
         if (i != 0)
         {
             Response.Write("<script>window.alert('取消成功！');</script>");
-            sql1 = "select * from BorrowLog where userID = '" + userid + "' and IsDeleted=0 order by date desc";
-            myda = new SqlDataAdapter(sql1, myconn);
-            myda.Fill(myds, "borrowlog");
-            GridView1.DataSource = myds.Tables["borrowlog"];
-            GridView1.DataBind();
-            myconn.Close();
+            Response.Redirect("Cancel.aspx");
 
         }
         else { Response.Write("<script>window.alert('error！');</script>"); }
