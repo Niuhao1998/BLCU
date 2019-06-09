@@ -29,25 +29,26 @@
 ##### 为了实现主要的功能。我们对数据库进行了设计。数据库中有这么几张表：
 ### Admin表
 ##### Admin表用来存储管理员信息，表的结构是：
-|   Admin|数据类型|
+|Admin|数据类型|
 | ------------ |
-|  ID |nchar(10)|
+|ID |nchar(10)|
 |密码|nchar(12)|
+
 ### BorrowLog表
 ##### BorrowLog表用来记录借用教室等信息，表的结构是
-|  BorrowLog |数据类型|
+|BorrowLog |数据类型|
 | ------------ |
-|   date|date|
-|  starttime |time(7)|
-|   campus|nvarchar(50)|
-|   building|nchar(10)|
-|   room|nchar(10)nvarchar(50)|
-|   userID|nvarchar(50)|
-|   reason|nchar(10)|
-|   checkstate|time(7)|
-|   endtime|time(7)|
-|   IsDeleted|int|
-|   orderdate|int|
+|date|date|
+|starttime |time(7)|
+|campus|nvarchar(50)|
+|building|nchar(10)|
+|room|nchar(10)nvarchar(50)|
+|userID|nvarchar(50)|
+|reason|nchar(10)|
+|checkstate|time(7)|
+|endtime|time(7)|
+|IsDeleted|int|
+|orderdate|int|
 ### Buildings表
 ##### Buildings表用来保存学校教学楼信息
 | Buildings  |数据类型   |
