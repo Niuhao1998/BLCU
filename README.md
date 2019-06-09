@@ -49,21 +49,21 @@
 |   IsDeleted|int|
 |   orderdate|int|
 ### Buildings表
-#####Buildings表用来保存学校教学楼信息
+##### Buildings表用来保存学校教学楼信息
 | Buildings  |数据类型   |
 | ------------ | ------------ |
 |  buildingID |bigint   |
 | buildingName  |varchar(50)   |
 |   campus| varchar(50)  |
-###Campus表
-#####Campus表用来处理校区等信息
+### Campus表
+##### Campus表用来处理校区等信息
 
 | Campus  |数据类型   |
 | ------------ | ------------ |
 |campusID|bigint|
 |campus|varchar(50)|
 ### classrooms表
-#####classrooms表用来记录可以使用的教室。
+##### classrooms表用来记录可以使用的教室。
 | classroom  |数据类型   |
 | ------------ | ------------ |
 |campus|nvarchar(50)|
